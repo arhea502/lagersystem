@@ -4,7 +4,7 @@ const ERROR_NAME_REQUIRED = "Name is required to rent the equipment.";
 const ERROR_EQUIPMENT_DETAILS = "Please enter equipment name and select an image.";
 const SUCCESS_LOGIN = "Logged in successfully!";
 const ERROR_INVALID_USERNAME = "Invalid username. Please try again.";
-const USERNAME = "Arian"; // Replace with the desired username
+const USERNAME = "Arian"; // Replace with the desired username    
 
 function addEquipment() {
     const name = document.getElementById('equipmentName').value;
