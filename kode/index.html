@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utstyrsliste</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+
+    <button id="loginButton" class="loginbutton">Login</button>
+    
+
+    
+    
+
+<h1>Utstyrsliste</h1>
+
+
+<h2>Search Equipment</h2>
+<input type="text" id="searchInput" placeholder="Søk etter utstyr..." onkeyup="searchEquipment()">
+<table id="equipmentTable">
+    <thead>
+        <tr>
+            <th>Utstyrstype</th>
+            <th>Bilde</th>
+            <th>Status</th>
+            <th>Lei</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Kamera</td>
+            <td><img src="" alt="Kamera." width="50"></td>
+            <td><span class="status available">Tilgjengelig</span></td>
+            <td>
+                <button onclick="changeStatus(this)">Leie ut</button>
+                <button onclick="deleteEquipment(this)" class="delete-button">Slett</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Stativ</td>
+            <td><img src="stativ.jpg" alt="Stativ" width="50"></td>
+            <td><span class="status available">Tilgjengelig</span></td>
+            <td>
+                <button onclick="changeStatus(this)">Leie ut</button>
+                <button onclick="deleteEquipment(this)" class="delete-button">Slett</button>
+            </td>
+        </tr>
+    </tbody>
+    
+</table>
+
+<h2>Registrer nytt utstyr</h2>
+<input type="text" id="equipmentName" placeholder="Utstyrstype">
+<input type="file" id="equipmentImage">
+<button id="addButton" onclick="addEquipment()" disabled>Legg til</button>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
+
